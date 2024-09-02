@@ -1,0 +1,148 @@
+@font-face{
+    font-family:Product Sans;
+    src: url(./fonts/Product\ Sans\ Regular.ttf);
+} 
+
+ 
+ 
+@font-face{
+    font-family:Product Sans;
+    src: url(./fonts/Product\ Sans\ Bold.ttf);
+} 
+ 
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Product Sans;
+ }
+ html ,body {
+    height: 100%;
+    width: 100%;
+
+ }
+ #main{
+    width: 100%;
+    height: 100vh;
+    background-color: orangered;
+ }
+ nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    padding: 0vw 10vw;
+    z-index: 99;
+
+ }
+
+ nav a , i{
+    font-size: 1vw;
+    text-decoration:none;
+    color: #fff;
+
+ }
+ .cntr-nav{
+    display: flex;
+    gap: 3vw;
+ }
+ nav i{
+    font-size: 1.5vw;
+ }
+ .one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(orange,orangered);
+ }
+ .one h1{
+    font-size: 25vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif bold;
+    color: #fff;
+
+ }
+ #fanta{
+    position: absolute;
+    width: 40%;
+    z-index:2; 
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+ }
+ #orange-cut{
+    position: absolute;
+    top: 10%;
+    left:32%;
+    width:15%;
+    z-index:1; 
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#orange{
+    width:20%;
+    position: absolute;
+    z-index: 3;
+    top: 65%;
+    right: 35%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#leaf1{
+    top: 10%;
+    left: 0%;
+    transform: rotate(60deg);
+    position:absolute;
+    width: 18%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#leaf2{
+    top: 70%;
+    left: 80%;
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 12%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#leaf3{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 20%;
+}
+.two{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background:#861e0e ;
+
+
+}
+.lft-two,.rght-two{
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction: column;
+    gap: 5vh;
+    width:50%;
+    height: 100%;
+   
+}
+
+.lft-two svg{
+    margin-top: 50vh;
+    background-color:#861e0e;
+    width: 90%;
+    transform: rotateX('50%');
+}
+.rght-two h1{
+    color: #fff;
+    font-size: 5vw;
+
+}
+.rght-two p{
+    color: #fff;
+    font-size: 1vw;
+    width: 80%;
+
+}
